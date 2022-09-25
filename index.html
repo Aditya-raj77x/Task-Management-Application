@@ -16,13 +16,15 @@
 
 <body onload="loadInitialData()">
   <div class="add__new__btn__mobile__only d-md-none">
-    <button class="btn btn-primary d-flex align-items-center gap-2" type="submit" data-bs-toggle="modal"
+    <button class="btn btn-danger d-flex align-items-center gap-2" type="submit" data-bs-toggle="modal"
       data-bs-target="#addNewModal">
       <i class="fas fa-plus"></i>Add New
     </button>
   </div>
 
-  <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
+  <div class="modal fade"
+    style="background-image: url(./modal-bg.webp);background-repeat: no-repeat; background-size: cover; background-position: center;"
+    id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -80,12 +82,13 @@
   <nav class="navbar navbar-expand-lg " style="background-color: rgb(8, 10, 12);">
     <div class="container-fluid">
       <a class="navbar-brand " id="rex" href="#">Tasky</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" style="background-color: rgb(255, 51, 51)" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" id="rex"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto" id="rex">
           <li class="nav-item">
             <a class="nav-link active" id="rex" aria-current="page" href="#">Home</a>
           </li>
