@@ -33,7 +33,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form onsubmit="return false">
+          <form>
             <div class="mb-3">
               <label for="imageUrl" class="form-label">Image URL</label>
               <input type="url" class="form-control" id="imageUrl" placeholder="http://anime.com/image.png" />
@@ -54,7 +54,7 @@
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="submit" type="button" class="btn btn-danger" onclick="handleSubmit()">
+            <button type="submit" class="btn btn-danger" onclick="handleSubmit()">
               Save changes
             </button>
           </form>
